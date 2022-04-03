@@ -1,0 +1,112 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled14.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOAe/4rnBuOpnRyt6Jp6a5O",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Divyaramphul/test/blob/main/Untitled14.ipynb2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aGOafQRNCc0t",
+        "outputId": "a16bbbd5-53a5-4bf7-c2f6-06573c124cc8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter value : 10\n",
+            "Enter number of month : 3\n",
+            "Enter value of megabyte used: 6\n",
+            "Enter value of megabyte used: 4\n",
+            "Enter value of megabyte used: 2\n",
+            "Total megabyte available for N+1 28\n"
+          ]
+        }
+      ],
+      "source": [
+        "monthly_megab = int(input(\"Enter value : \"))\n",
+        "months = int(input(\"Enter number of month : \"))\n",
+        "\n",
+        "total = monthly_megab* (months + 1)\n",
+        "\n",
+        "for i in range(months):\n",
+        "  # used = input amount of megab \n",
+        "  used = int(input(\"Enter value of megabyte used: \"))\n",
+        "  # calculate total\n",
+        "  total = total - used\n",
+        "  # print total\n",
+        "\n",
+        "print(\"Total megabyte available for N+1\" , total)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "monthly_megab = int(input(\"Enter value : \"))\n",
+        "months = int(input(\"Enter number of month : \"))\n",
+        "\n",
+        "total = monthly_megab* (months + 1)\n",
+        "count = 0\n",
+        "while (count < months):\n",
+        "  # used = input amount of megab \n",
+        "  used = int(input(\"Enter value of megabyte used: \"))\n",
+        "  # calculate total\n",
+        "  total = total - used\n",
+        "  count = count + 1\n",
+        "  # print total\n",
+        "\n",
+        "print(\"Total megabyte available for N+1\" , total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UhphPVEhIsC_",
+        "outputId": "9cf2e32d-d59d-42f7-96f2-27b859933bdd"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter value : 10\n",
+            "Enter number of month : 3\n",
+            "Enter value of megabyte used: 6\n",
+            "Enter value of megabyte used: 4\n",
+            "Enter value of megabyte used: 2\n",
+            "Total megabyte available for N+1 28\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
